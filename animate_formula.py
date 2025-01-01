@@ -4,7 +4,7 @@ from manim import *
 class MathFormulaScene(Scene):
     def construct(self):
         # Create a math formula
-        formula = MathTex("E = mc^2")
+        formula = Text("E = mc^2")
 
         # Position the formula on the screen
         formula.move_to(ORIGIN)
@@ -16,7 +16,7 @@ class MathFormulaScene(Scene):
         self.wait(1)
 
         # Apply a transformation (e.g., scaling)
-        self.play(formula.scale, 2)
+        self.play(formula.animate.scale(2))  # Fixed the scaling transformation
 
         # Wait before finishing the animation
         self.wait(1)
