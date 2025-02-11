@@ -10,3 +10,5 @@ brew install --cask mactex
 pip install manim
 
 manim -pql linear_equation_to_vector.py LinearEquationToVector
+
+manim -pql book.py IntegerSolutionsScene
